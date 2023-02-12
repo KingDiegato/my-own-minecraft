@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+/* hacemos que el root aplique en toda la pantalla */
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    overflow: hidden;
+}
+
+body {
+    position: fixed;
+}
+
+/* punteo del minecraft */
+.pointer {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    
+}
