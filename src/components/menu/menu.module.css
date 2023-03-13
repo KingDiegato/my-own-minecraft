@@ -1,0 +1,75 @@
+.background {
+  background-image: url(../../images/menu-bg.webp);
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  width: 200vw;
+  height: 200vh;
+  filter: blur(4px);
+  margin: 0;
+  padding: 0;
+
+  animation: backgroundMovement infinite 240s 0s;
+}
+
+@keyframes backgroundMovement {
+  0% {transform: translateX(0px);}
+  10% {transform: translateX(-200px);}
+  20% {transform: translateY(-200px) translateX(-200px);}
+  30% {transform: translateX(0px) translateY(-200px);}
+  60% {transform: translateY(-500px);}
+  80% {transform: translateX(-300px) translateY(-500px);}
+  100% {transform: translateX(0px);}
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px;
+  
+  text-decoration: none;
+  font-family: Minecraft, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+
+  
+  background: url(../../images/buttn-texture.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 8px solid rgb(60, 60, 60);
+  color: rgba(235, 235, 235, 0.886);
+  
+  width: 20rem;
+  height: 5rem;
+}
+.button:hover {
+  filter: brightness(90%);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  gap:30px;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+}
+
+.tittle {
+  font-size: 96px;
+  background-image: url(../../images/buttn-texture.webp);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: Minecraft, Verdana, Geneva, Tahoma, sans-serif;
+}
+.tittleH2 {
+  
+  box-shadow: 0px 4px black ;
+}
